@@ -1,0 +1,119 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: inherit;
+    margin-top: 5%;
+}
+
+#jaquette{
+    width: 75%;
+    grid-area: 2/2/3/3;
+    display: flex;
+    justify-self: center;
+ 
+}
+
+#description{
+    grid-area: 2/3/3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+#nb{
+    grid-area: 3/2/4/3;
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    padding-top: 4%;
+}
+
+#acheter{
+    cursor: pointer;
+    background-color: rgb(25, 25, 198);
+    border: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 10px 30px;
+    color: white;
+    text-align: center;
+}
+
+#acheter:hover {
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.4s;
+}
+
+#disabled{
+    
+    cursor: pointer;
+    background-color: rgb(25, 25, 198);
+    border: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 10px 30px;
+    color: white;
+    margin: 10px 0px;
+    opacity: 0.6;
+    cursor: not-allowed;
+    
+}
+
+#qty{
+    width: 30px;
+    margin: 3px;
+    
+}
+
+#titre{
+    font-size: x-large;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#trait{
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.caracteristiques{
+    padding-top: 5%;
+    grid-area: 2/3/3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 0;
+}
+
+.genre{
+    grid-area: 2/3/3/4;
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.extraits{
+    grid-area: 3/2/4/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    height: 35%;
+}
+
+#img{
+    border-radius: 10px;
+}
+
