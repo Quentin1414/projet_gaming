@@ -2,6 +2,7 @@ html, body{
     height:  100%;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 #container{
@@ -23,6 +24,7 @@ figcaption{
     border-radius: 10px;
     height: 65%;
     cursor: pointer;
+    
 }
 
 .image:hover{
