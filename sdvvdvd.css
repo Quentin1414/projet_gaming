@@ -1,0 +1,45 @@
+#container{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
+    height: inherit;
+    margin: 0;
+}
+
+.bordure{
+    height: 400px;
+    width: 250px;
+    background: linear-gradient(#041964, #3C084F, #041964 );
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1;
+    
+    
+}
+.image{
+    border-radius: 10px;
+    height: 65%;
+    cursor: pointer;
+}
+
+.image:hover{
+    transform: scale(1.08);
+    
+}
+
+#un, #deux, #trois, #quatre, #cinq, #six{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+figcaption{
+    margin-top: 3px;
+}
