@@ -1,279 +1,118 @@
-* {
+html, body{
+    height:  100%;
     margin: 0;
-    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-@font-face {
-    font-family: Valorax;
-    src: url("../valorax-font/Valorax-lg25V.otf") format("opentype");
+#container{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr) ;
+    grid-template-columns: repeat(5, 1fr);
+    height: inherit;
+    margin: 0;
+
 }
 
-
-body {
-    background: linear-gradient( to top ,#200016, #3a363e);
-    height: 100vh;
-    
-font-family: Valorax;
-}
-
-a {
-    text-decoration: none;
+figcaption{
     color: white;
+    margin-top: 15px;
+
 }
 
-
-header {
-    position: sticky;
-    width: 95%;
-    z-index: 99;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px;
+.image{
+    border-radius: 10px;
+    margin: 0px 10px 0px 10px;
+    height: 299px;
+    width: 221px;
+    cursor: pointer;
 }
 
-header .logo {
-    font-size: 30px;
-    text-transform: uppercase;
+.image:hover{
+    transform: scale(1.08);
+
 }
 
-  .princip_ul {
-    list-style: none;
-    height: 40px;
-    width: fit-content;
-    }
-    .princip_ul li {
-    display: inline-block;
-    position: relative;
-    padding: 0;
-
-
-    }
-    .princip_ul li a {
-    display: block;
-    padding: 10px 25px;
-    color: #ffffffc6;
-    text-decoration: none;
-    font-size: 20px;
-  text-align: center;
-  
-    }
-    .princip_ul li ul.dropdown li {
-    display: block;
-    }
-    .princip_ul li ul.dropdown {
-    width: 100%;
-    background:#e5dce24f;
+.bordure{
+    height: 400px;
+    width: 250px;
+    background: linear-gradient(#041964, #3C084F, #041964 );
+    border-radius: 10px;
     position: absolute;
-    z-index: 999;
-    display: none;
-    }
-    .princip_ul li:hover ul.dropdown {
-        display: block;
-    
-        }
-       
-        .princip_ul ul li a:hover,
-    .active {
-        display: block;
-    
-        background: #67034441;
-        color: #3C084F;
-    }
-    
-
-.site-footer
-{
-  background:linear-gradient( to bottom ,#200016, #3a363e);
-  padding:10px 0 20px;
-  
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
-  font-family: Georgia, Arial and Helvetica;
-  border-top: 2px solid #fafafa51;
-  
-
+    z-index: -1;
 }
-img{
-    width: 300px;
-    height: 300px;
-}
-.games{
+
+
+#un, #deux, #trois, #quatre, #cinq, #six{
+    margin: 45px;
+    padding-bottom: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    color: white;
-    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-.site-footer a
-{
-  color:#737373;
-}
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-  text-align:right
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
-}
-#footer_retro{
-    color: white;
-}
-#footer_retro:hover{
-    color: #be1ec6;
-}
-.copyright-text
-{
- padding-top: 10px;
-  margin:0;
-  border-top: 2px solid #fafafa51
-}
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-}
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
-}
-.social-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
-}
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
-}
-.social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
-}
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
-}
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
-}
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
-}
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
-}
-.social-icons a.linkedin:hover
-{
-  background-color:#007bb6
-}
-.social-icons a.dribbble:hover
-{
-  background-color:#ea4c89
-}
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
-    
-@keyframes rotate {
-    100% {
-        transform: perspective(1100px) rotateY(360deg);
-    }
+input{
+    cursor: pointer;
+    margin-top: 20px;
 }
 
-@media screen and (max-width: 965px) {
-    .section1 {
-        height: 500px;
-        width: 98.9%;
+#un{
+    grid-area: 3/2/4/3 ;
+}
 
-        border: solid 3px #051C24;
-    }
+#deux{
+    grid-area: 3/3/4/4 ;
+}
+
+#trois{
+    grid-area: 3/4/4/5 ;
+}
+
+#quatre{
+    grid-area: 4/2/5/3 ;
+}
+
+
+#cinq{
+    grid-area: 4/3/5/4
+}
+
+#six{
+    grid-area: 4/4/5/5 ;
+}
+
+#presentation{
+    grid-area: 2/2/3/5
+}
+
+h1{
+    grid-area: 1/4/2/5;
+    display: flex;
+    justify-content: end;
+}
+
+#trait{
+    grid-area: 1/4/2/5;
+    border-bottom: 2px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%; 
+}
+
+#snes{
+    grid-area: 1/2/1/4;
+    display: flex;
+    justify-self: center;
+    width: 80%;
+    padding-top: 11%;
+}
+
+#console{
+    width: 100%;
+    grid-area: 1/4/2/5;
+    display: flex;
+    justify-self: center;
+    padding: 25px;
+    border-radius: 50%;
 }
